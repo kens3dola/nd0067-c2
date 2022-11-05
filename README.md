@@ -1,6 +1,6 @@
-#Configurations:
-##port: 3000
-##environment variables: listed in .env
+#   Configurations:
+##  port: 3000
+##  environment variables: listed in .env
 
 -   POSTGRES_HOST=127.0.0.1
 -   POSTGRES_DB=nd0067
@@ -10,8 +10,8 @@
 -   ENV=dev
 -   TOKEN_SECRET=abcd
 
-##installation: npm i
-##db:
+##  installation: npm i
+##  db:
 
 ```
     CREATE USER postgres WITH PASSWORD 'postgres';
@@ -25,5 +25,5 @@
     GRANT ALL PRIVILEGES ON DATABASE nd0067 TO postgres;
 ```
 
-##Run server: npm start
-##Run test: npm run test
+##  Run server: npm start
+##  Run test: npm run test
