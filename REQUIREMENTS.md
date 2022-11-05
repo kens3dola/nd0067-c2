@@ -11,6 +11,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 -   Index: '/products' [GET]
 -   Show: '/products/:id' [GET]
 -   Create [token required]: '/products' [POST]
+    payload: `{ "name": "product5", "price": "5" }`
 -   [OPTIONAL] Top 5 most popular products
 -   [OPTIONAL] Products by category (args: product category)
 
@@ -19,9 +20,12 @@ These are the notes from a meeting with the frontend developer that describe wha
 -   Index [token required]: '/users' [GET]
 -   Show [token required]: '/users/:id' [GET]
 -   Create N[token required]: '/users' [POST]
+    payload: `{ "username": "sang", "first_name": "sang", "last_name": "sang", "password": "sang" }`
 
 #### Orders
 
+-   Create order: '/orders'
+    payload: `{"user_id":"1"}`
 -   Current Order by user (args: user id)[token required]: '/orders?status=active&userid={user id}' [GET]
 -   [OPTIONAL] Completed Orders by user (args: user id)[token required] '/orders?status=completed&userid={user id}' [GET]
 
