@@ -1,9 +1,10 @@
-import { OrderStore, STATUS } from "../orders";
+import { OrderStore, STATUS } from "../../models/orders";
 
 const orderStore = new OrderStore();
 
 describe("Order model", () => {
     it("should have an create method", () => {
+        console.log(__filename);
         expect(orderStore.create).toBeDefined();
     });
     it("should have a addProduct method", () => {

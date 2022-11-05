@@ -1,9 +1,10 @@
-import { UserStore } from "../users";
+import { UserStore } from "../../models/users";
 
 const userStore = new UserStore();
 
 describe("User model", () => {
     it("should have an index method", () => {
+        console.log(__filename);
         expect(userStore.index).toBeDefined();
     });
     it("should have a show method", () => {

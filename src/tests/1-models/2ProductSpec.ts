@@ -1,9 +1,10 @@
-import { ProductStore } from "../products";
+import { ProductStore } from "../../models/products";
 
 const productStore = new ProductStore();
 
 describe("Product model", () => {
     it("should have an index method", () => {
+        console.log(__filename);
         expect(productStore.index).toBeDefined();
     });
     it("should have a show method", () => {
@@ -19,7 +20,6 @@ describe("Product model", () => {
             name: "test",
             price: 1,
         });
-        console.log(JSON.stringify(result));
         console.log({
             id: 1,
             name: "test",

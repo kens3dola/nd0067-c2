@@ -7,7 +7,7 @@ const orderStore = new OrderStore();
 const dashboard = new DashboardQueries();
 
 const orderRoutes = (app: Application) => {
-    app.get("/orders", getOrderByStatus);
+    app.get("/orders", verifyAuthToken, getOrderByStatus);
     app.post("/orders", verifyAuthToken, create);
     app.post("/orders/:id/products", verifyAuthToken, addProduct);
 };

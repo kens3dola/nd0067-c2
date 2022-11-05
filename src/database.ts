@@ -29,7 +29,6 @@ const executeQuery = async (sql: string, param: any[]): Promise<any[]> => {
     try {
         const conn = await client.connect();
         const result = await conn.query(sql, param);
-        console.log(`Query: ${sql}\nParams: ${param}}`);
         conn.release();
         return result.rows;
     } catch (err) {
